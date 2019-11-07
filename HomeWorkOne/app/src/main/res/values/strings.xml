@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HomeWorkOne</string>
+    <string name="look_weather">Look weather</string>
+    <string name="choose_your_params">Choose your params</string>
+    <string name="saint_petersburg">Saint-Petersburg</string>
+    <string name="moscow">Moscow</string>
+    <string name="london">London</string>
+    <string name="barcelona">Barcelona</string>
+    <string name="porto">Porto</string>
+    <string name="prague">Prague</string>
+    <string name="helsinki">Helsinki</string>
+    <string name="look_weather_now">LOOK WEATHER NOW</string>
+    <string name="city_name">City name</string>
+</resources>
