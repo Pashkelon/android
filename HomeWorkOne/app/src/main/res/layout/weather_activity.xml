@@ -3,7 +3,8 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<TextView
+
+    <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="@string/choose_your_params"
@@ -11,11 +12,19 @@
     android:textSize="32dp"
     android:textStyle="bold"/>
 
+
+
+
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="100dp">
+        android:orientation="vertical">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/search_city"
+            android:queryHint="choose your city"/>
 
         <CheckBox
             android:layout_width="match_parent"
@@ -31,35 +40,6 @@
             android:text="@string/moscow"
             android:textSize="16sp" />
 
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="@string/london"
-            android:textSize="16sp" />
-
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="@string/barcelona"
-            android:textSize="16sp" />
-
-
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="@string/porto"
-            android:textSize="16sp" />
-
-
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="@string/prague"
-            android:textSize="16sp" />
 
         <CheckBox
             android:layout_width="match_parent"
@@ -68,7 +48,37 @@
             android:text="@string/helsinki"
             android:textSize="16sp" />
 
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/another"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="40dp">
+
+            <RadioButton
+                android:id="@+id/show_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/show_pressed" />
+
+            <RadioButton
+                android:id="@+id/show_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/show_wind" />
+
+
+        </RadioGroup>
+
     </LinearLayout>
+
 
     <Button
         android:id="@+id/button"

@@ -11,4 +11,8 @@
     <string name="helsinki">Helsinki</string>
     <string name="look_weather_now">LOOK WEATHER NOW</string>
     <string name="city_name">City name</string>
+    <string name="another">Another</string>
+    <string name="pressed">Pressed</string>
+    <string name="show_pressed">Show pressed</string>
+    <string name="show_wind">Show wind</string>
 </resources>
