@@ -15,4 +15,5 @@
     <string name="pressed">Pressed</string>
     <string name="show_pressed">Show pressed</string>
     <string name="show_wind">Show wind</string>
+    <string name="choose_your_city">choose your city</string>
 </resources>
