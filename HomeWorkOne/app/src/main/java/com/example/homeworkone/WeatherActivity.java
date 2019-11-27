@@ -2,23 +2,24 @@ package com.example.homeworkone;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.textfield.TextInputEditText;
+
+import java.util.regex.Pattern;
 
 
 public class WeatherActivity extends AppCompatActivity implements View.OnClickListener {
 
-    public EditText chooseCity;
+    public TextInputEditText chooseCity;
     public RadioButton spb;
     public RadioButton msc;
     public RadioButton hls;
@@ -26,6 +27,9 @@ public class WeatherActivity extends AppCompatActivity implements View.OnClickLi
     public CheckBox prs;
     public CheckBox wnd;
     public Button lookWeather;
+
+    Pattern checkCity = Pattern.compile("^[A-Z][a-z]{2,}$");
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,6 +48,34 @@ public class WeatherActivity extends AppCompatActivity implements View.OnClickLi
         msc.setOnClickListener(radioButtonClickListener);
         hls.setOnClickListener(radioButtonClickListener);
         anth.setOnClickListener(radioButtonClickListener);
+
+        chooseCity.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(b) return;
+                TextView tv = (TextView) view;
+
+                validate(tv, checkCity,"It`s not city");
+            }
+
+            private void validate(TextView tv, Pattern check, String message) {
+                String value = tv.getText().toString();
+                if (check.matcher(value).matches()){
+                    hideError(tv);
+                }
+                else{
+                    showError(tv, message);
+                }
+            }
+
+            private void showError(TextView view, String message) {
+                view.setError(message);
+            }
+
+            private void hideError(TextView view) {
+                view.setError(null);
+            }
+        });
     }
 
     View.OnClickListener radioButtonClickListener = new View.OnClickListener() {

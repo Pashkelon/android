@@ -16,4 +16,9 @@
     <string name="show_pressed">Show pressed</string>
     <string name="show_wind">Show wind</string>
     <string name="choose_your_city">choose your city</string>
+    <string name="refresh">Refresh</string>
+    <string name="city">City</string>
+    <string name="temperature">Temperature</string>
+    <string name="pressure">Pressure</string>
+    <string name="wind_speed">Wind speed</string>
 </resources>
