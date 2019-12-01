@@ -21,4 +21,9 @@
     <string name="temperature">Temperature</string>
     <string name="pressure">Pressure</string>
     <string name="wind_speed">Wind speed</string>
+    <string name="about_city">About city</string>
+    <string name="events">Events</string>
+    <string name="about_developer">About developer</string>
+    <string name="gurevich_pavel_student_of_geek_brains">Gurevich Pavel, Student of Geek Brains</string>
+    <string name="todo">TODO</string>
 </resources>

@@ -22,6 +22,7 @@
         <activity android:name=".WeatherActivity"
             android:configChanges="orientation|screenSize"></activity>
         <activity android:name="ShowWeather"></activity>
+        <activity android:name=".AboutDeveloper"></activity>
     </application>
 
 </manifest>
