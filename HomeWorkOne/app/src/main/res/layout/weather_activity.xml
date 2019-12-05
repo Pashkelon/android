@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/choose_your_params"
+    android:paddingLeft="60dp"
+    android:textSize="32dp"
+    android:textStyle="bold"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            app:errorEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/choose_your_city"
+            android:id="@+id/edit_city"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="173dp">
+
+            <RadioButton
+                android:id="@+id/saint_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/saint_petersburg"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/moscow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/moscow"
+                android:textSize="16sp" />
+
+
+            <RadioButton
+                android:id="@+id/helsinki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/helsinki"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/another"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/another"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+
+            <CheckBox
+                android:id="@+id/show_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_pressed" />
+
+            <CheckBox
+                android:id="@+id/show_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_wind" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/look_weather"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:text="@string/look_weather_now"
+        android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
