@@ -72,6 +72,7 @@ public class ShowWeather extends AppCompatActivity implements View.OnClickListen
         temperatureText = findViewById(R.id.text_temperature);
         Button refresh = findViewById(R.id.refresh);
         refresh.setOnClickListener(this);
+        //todo
 
     }
 
